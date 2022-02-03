@@ -6,8 +6,8 @@ A small tool to register a simple URL Handler that executes a script.
 ## Getting Started
 
 ```sh
-git clone https://github.com/LeXonJe/weblink
-yarn install
+$ git clone https://github.com/LeXonJe/weblink
+$ yarn install
 ```
 
 Then create a config file like that:
@@ -20,16 +20,18 @@ Then create a config file like that:
 }
 ```
 
-And now you can start and test the script.
+And now you can start and test the script:
 
 ```sh
-yarn start
+$ yarn start
 ```
+
+Now you should be able to type `(protocolName)://test` into your browser and get asked to execute the script.
 
 ## Building
 
 ```sh
-yarn build
+$ yarn build
 ```
 
 Then bundle your .exe from the dist folder with the config and a script (aka. put them in the same folder). Done!
