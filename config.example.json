@@ -1,0 +1,5 @@
+{
+  "protocolName": "testProt",
+  "installScript": "example.bat",
+  "installLocation": "%localappdata%\\scripts\\"
+}
