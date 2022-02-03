@@ -29,7 +29,6 @@ async function main() {
     return;
   }
 
-  /*
   const path = config.installLocation.replace(
     /%([^%]+)%/g,
     (_, n) => process.env[n]
@@ -51,9 +50,6 @@ async function main() {
     logger.prettyError(e);
     return;
   }
-  */
-
-  const destination = "LOOOOOL";
 
   logger.info(`Registering protocol "${config.protocolName}"`);
 
