@@ -10,7 +10,7 @@ $ git clone https://github.com/LeXonJe/weblink
 $ yarn install
 ```
 
-Then create a config file like that:
+Then create a `config.json` file like that:
 
 ```json
 {
