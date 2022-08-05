@@ -51,13 +51,15 @@ async function main() {
     return;
   }
 
-  logger.info(`Registering protocol "${config.protocolName}"`);
+  const command = config.command.replace("%location%", destination)
+
+  logger.info(`Registering protocol "${config.protocolName}" with command "${command}"`);
 
   // Registers the Protocol
   ProtocolRegistry.register(
     {
       protocol: config.protocolName, // sets protocol for your command , testproto://**
-      command: `${destination}`, // $_URL_ will the replaces by the url used to initiate it
+      command, // $_URL_ will the replaces by the url used to initiate it
       override: true, // Use this with caution as it will destroy all previous Registrations on this protocol
       terminal: false, // Use this to run your command inside a terminal
       script: false,
