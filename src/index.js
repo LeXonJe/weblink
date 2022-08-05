@@ -51,7 +51,7 @@ async function main() {
     return;
   }
 
-  const command = config.command.replace("%location%", destination)
+  const command = config.command.replace("%location%", destination);
 
   logger.info(`Registering protocol "${config.protocolName}" with command "${command}"`);
 
